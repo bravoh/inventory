@@ -1,0 +1,14 @@
+{
+    "name": "bravoh/inventory",
+    "description": "A simple package to manage inventory",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bravoh",
+            "email": "kiptoobravo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
