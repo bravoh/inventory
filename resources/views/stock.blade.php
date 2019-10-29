@@ -113,7 +113,11 @@
                         <td>{{$stock->quantity}}</td>
                         <td>{{@config('inventory-config.adjustment_types')[$stock->type]}}</td>
                         <td>{{@$stock->closing_quantity}}</td>
-                        <td></td>
+                        <td>
+                            <a style="color: red;" class="" href="{{route('inventory.stock.delete',$stock->id)}}">
+                                <i class="fa fa-trash-o"></i> delete
+                            </a>
+                        </td>
                     </tr>
                 @endforeach
 

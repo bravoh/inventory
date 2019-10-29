@@ -8,4 +8,5 @@ Route::group([
     Route::match(['get','post'],'/', 'InventoryController@index')->name('index');
     Route::match(['get','post'],'categories', 'InventoryController@categories')->name('categories');
     Route::match(['get','post'],'stock', 'InventoryController@stock')->name('stock');
+    Route::match(['get'],'{id}/delete', 'InventoryController@delete_stock_log')->name('stock.delete');
 });

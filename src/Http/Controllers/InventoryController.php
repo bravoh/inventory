@@ -87,4 +87,8 @@ class InventoryController extends Controller
         return view('inventory::stock',compact('items','inventory_items'));
     }
 
+    public function delete_stock_log(){
+        InventoryItemStock::destroy(request()->id);
+        return back();
+    }
 }
